@@ -5,13 +5,9 @@
     <script src='~/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
     <script>
         $(function () {
-            $('.nav li .nav li a').click(function () {
-                alert("alert");
-                $('.nav li .nav li .nav li').removeClass('active');
-                $(this).parent().addClass('active');
-            });
+            $('.nav li .nav li .nav');
+             $('.nav li .nav li .nav li:nth-of-type(1)').addClass('active');
         });
-
     </script>
 </head>
 <body>
